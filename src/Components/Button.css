@@ -1,6 +1,23 @@
-.button-container{
-    margin-top:590px;
-    position:absolute;
-    
-    
+/* Desktop styles */
+.button-container {
+    margin-top: 590px;
+    position: absolute;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .button-container {
+        margin-top: 10px; /* Reduced margin-top for mobile */
+        position: relative; /* Changed to relative for better mobile layout */
+        width: 100%; /* Full width on mobile */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Additional styles for buttons if needed */
+    .button-container button {
+        margin: 10px 0; /* Add some vertical spacing between buttons */
+        width: 80%; /* Make buttons wider on mobile */
+    }
 }
