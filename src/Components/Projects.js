@@ -1,23 +1,22 @@
-import React from 'react';
-import ProjectBox from './ProjectBox';
-import NewsletterImage from '../images/NewsletterImage.png';
-import RogfreeImage from '../images/RogfreeImage.png';
-import TindogImage from '../images/TindogImage.png';
-import WigglesImage from '../images/WigglesImage.png';
+import React from "react";
+import ProjectBox from "./ProjectBox";
+import EnlGOldImage from "../images/Enl Gold.jpg";
+import BeezticImage from "../images/Beeztic.jpg";
+import XchangeImage from "../images/Xchange.jpg";
 
 const Projects = () => {
   return (
     <div>
-      <h1 className='projectHeading'>My <b>Projects</b></h1>
-      <div className='project'>
-        <ProjectBox projectPhoto={WigglesImage} projectName="Wiggles" />
-        <ProjectBox projectPhoto={NewsletterImage} projectName="Newsletter" />
-        <ProjectBox projectPhoto={RogfreeImage} projectName="RogFree" />
-        <ProjectBox projectPhoto={TindogImage} projectName="Tindog" />
+      <h1 className="projectHeading">
+        My Latest<b>Projects</b>
+      </h1>
+      <div className="project">
+        <ProjectBox projectPhoto={EnlGOldImage} projectName="EnlGold" />
+        <ProjectBox projectPhoto={BeezticImage} projectName="Beeztic" />
+        <ProjectBox projectPhoto={XchangeImage} projectName="Xchangeunion" />
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
