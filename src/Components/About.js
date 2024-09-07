@@ -3,7 +3,7 @@ import Skills from "./Skills.js";
 import Tilt from "react-parallax-tilt";
 import Lottie from "lottie-react";
 import Coder from "../LottieFiles/coder.json";
-import Button from "../Components/Button.js";
+
 
 const About = () => {
   return (
@@ -27,19 +27,10 @@ const About = () => {
             footer.
             <br />
           </p>
-          <br></br>
-
-          <p>
-            Enjoy my <b>code?</b> Buy me a virtual <b>coffee!</b> Hit{" "}
-            <b>'Pay with Code'</b> to fuel my next coding sprint.
-          </p>
-          <br></br>
-          <p>
-            Every <b>cup counts</b> towards brewing better digital{" "}
-            <b>experiences!</b>
-          </p>
+          
+          
         </div>
-        <Button />
+        
 
         <div>
           <Tilt>

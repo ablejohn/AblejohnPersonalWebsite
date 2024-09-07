@@ -51,7 +51,7 @@ const Home = () => {
 
         <Tilt>
           <img
-            style={{ width: "600px" }}
+            style={{ width: "400px" }}
             className="Avatar"
             src={Avatar}
             alt=""
