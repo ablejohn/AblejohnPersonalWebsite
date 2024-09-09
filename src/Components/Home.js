@@ -5,6 +5,7 @@ import Typed from "./Typed.js";
 import Tilt from "react-parallax-tilt";
 import Avatar from "../images/Avatar.png";
 import Button from "../Components/Button.js";
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -18,7 +19,12 @@ const Home = () => {
           <Typed />
         </div>
 
-        <Lottie className="illustration" animationData={SpaceBoy} loop={true} />
+        <Lottie
+          className="illustration"
+          style={{ marginRight: "50px", width: "250px", height: "300px" }} // Adjust the width and height as needed
+          animationData={SpaceBoy}
+          loop={true}
+        />
       </div>
 
       <div className="AboutPage">
@@ -51,7 +57,7 @@ const Home = () => {
 
         <Tilt>
           <img
-            style={{ width: "400px" }}
+            style={{ width: "350px" }}
             className="Avatar"
             src={Avatar}
             alt=""

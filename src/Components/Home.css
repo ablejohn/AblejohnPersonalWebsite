@@ -1,0 +1,21 @@
+.HomePage {
+    margin-left: -90px; /* Adjust the value as needed */
+  }
+  
+  .AboutPage {
+    padding-right: 0px; /* Adjust the value as needed */
+  }
+  
+  .AboutText {
+    padding-right: 0px; /* Adjust the value as needed */
+  }
+  @media screen and (max-width: 768px) {
+    .HomePage{
+        margin-left:40px;
+    }
+    .illustration{
+        margin-left:30px;
+    }
+    }
+
+
