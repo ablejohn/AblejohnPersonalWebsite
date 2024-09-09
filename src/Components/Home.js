@@ -21,7 +21,7 @@ const Home = () => {
 
         <Lottie
           className="illustration"
-          style={{ marginRight: "50px", width: "250px", height: "300px" }} // Adjust the width and height as needed
+          style={{ marginRight: "70px", width: "250px", height: "300px" }} // Adjust the width and height as needed
           animationData={SpaceBoy}
           loop={true}
         />
