@@ -4,7 +4,6 @@ import Tilt from "react-parallax-tilt";
 import Lottie from "lottie-react";
 import Coder from "../LottieFiles/coder.json";
 
-
 const About = () => {
   return (
     <>
@@ -15,11 +14,9 @@ const About = () => {
           </h1>
           <p>
             Hi, my name is <b>John Ayomide ABE</b> from Nigeria. I'm an{" "}
-            <b>IT Consultant ,Front-End Developer</b> and a college student
-            pursuing a <b>BSc in Computer Science</b> at Osun State University.{" "}
+            <b>IT Consultant, Fullstack Developer</b> and a Student pursuing a{" "}
+            <b>BSc in Computer Science</b> at Osun State University.
             <br />
-            <br />I have experience as a <b>Front-End Web Developer</b> at
-            Beeztic and as a <b>Full Stack Web Developer</b> at XchangeUnion.
             I'm passionate about creating exceptional user experiences and
             developing high-quality, scalable solutions. <br />
             <br />I am <b>open</b> to new collaborations or work where I can
@@ -27,10 +24,7 @@ const About = () => {
             footer.
             <br />
           </p>
-          
-          
         </div>
-        
 
         <div>
           <Tilt>

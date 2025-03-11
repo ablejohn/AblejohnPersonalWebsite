@@ -1,55 +1,66 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
+import { FaMobile, FaLaptopCode } from "react-icons/fa";
 
-const ProjectBox = ({ projectPhoto, projectName }) => {
-  const desc = {
-    EnlGoldDesc:
-      "Crafted the entire website from concept to launch, ensuring it effectively represented the company's brand and met all business requirements. ",
-    EnlGOldGithub: "*",
-    EnlGOldWebsite: "https://enlgoldproject.com.ng/",
-
-    BeezticDesc:
-      "As a front-end developer at Beeztic, I played a key role in designing and developing the user interface for our web applications.",
-    BeezticGithub: "*",
-    BeezticWebsite: "https://beeztic.com/",
-
-    XchangeunionDesc:
-      "As a full-stack developer at Xchange Union, I took on a comprehensive role in both frontend and back-end development of our web applications.",
-    XchangeunionGithub: "*",
-    XchangeunionWebsite: "https://xchangeunion.com/",
-  };
-
-  let show = "";
-  if (desc[projectName + "Github"] === "") {
-    show = "none";
-  }
-
+const ProjectBox = ({
+  projectPhoto,
+  projectName,
+  projectDesc,
+  projectGithub,
+  projectWebsite,
+  category,
+}) => {
+  // Changed this to always show GitHub button
+  // No conditional display based on "*" character
   return (
     <div className="projectBox">
-      <img className="projectPhoto" src={projectPhoto} alt="Project display" />
-      <div>
-        <br />
-        <h3>{projectName}</h3>
-        <br />
-        {desc[projectName + "Desc"]}
-        <br />
+      <div className="project-image-container">
+        <img
+          className="projectPhoto"
+          src={projectPhoto}
+          alt={`${projectName} project`}
+        />
+        <div className="category-badge">
+          {category === "web" ? (
+            <>
+              <FaLaptopCode /> Web
+            </>
+          ) : (
+            <>
+              <FaMobile /> Mobile
+            </>
+          )}
+        </div>
+      </div>
 
-        <a
-          style={{ display: show }}
-          href={desc[projectName + "Github"]}
-          target="_blank"
-        >
-          <button className="projectbtn">
-            <FaGithub /> Github
-          </button>
-        </a>
+      <div className="project-content">
+        <h3 className="project-title">{projectName}</h3>
+        <p className="project-description">{projectDesc}</p>
 
-        <a href={desc[projectName + "Website"]} target="_blank">
-          <button className="projectbtn">
-            <CgFileDocument /> Demo
-          </button>
-        </a>
+        <div className="project-links">
+          <a
+            href={projectGithub}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github-link"
+          >
+            <button className="projectbtn github-btn">
+              <FaGithub /> Github
+            </button>
+          </a>
+
+          <a
+            href={projectWebsite}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="demo-link"
+          >
+            <button className="projectbtn demo-btn">
+              <CgFileDocument /> Demo
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );
