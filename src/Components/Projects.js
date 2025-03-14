@@ -37,7 +37,7 @@ const Projects = () => {
       category: "web",
       desc: "A website built for an Event Planning Company to showcase their services and recent EventsThe Website was built using React and Node.js",
       github: "https://github.com/ablejohn/ACE-Concept", // Added GitHub link
-      website: "https://ace-concept.vercel.app/",
+      website: "https://aceconcept.vercel.app/",
     },
     {
       id: 5,
