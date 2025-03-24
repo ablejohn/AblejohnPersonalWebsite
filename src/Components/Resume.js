@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsDownload } from "react-icons/bs";
-import pdf from "../John Ayomide ABE cv.pdf";
+import pdf from "../JOHN AYOMIDE ABE LATEST CV.pdf";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
