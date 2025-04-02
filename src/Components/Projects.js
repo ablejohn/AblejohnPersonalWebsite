@@ -19,7 +19,7 @@ const Projects = () => {
       category: "web",
       desc: "A Website Built for an Airbnb Company to let out their properties to the public. The website was built using React and Node.js.",
       github: "https://github.com/ablejohn/Com4thPlus", // Added GitHub link
-      website: "https://com4thplus.net/",
+      website: "https://com4th-plus.vercel.app/",
     },
     {
       id: 6,
